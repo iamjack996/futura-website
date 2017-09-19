@@ -74,9 +74,10 @@
   </head>
 <body>
      @yield('content')
+@yield('footer')
 <!-- javascripts -->
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-@yield('footer')
+
 <!-- google analysis -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

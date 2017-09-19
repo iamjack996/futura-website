@@ -21,8 +21,8 @@ elixir.config.sourcemaps = false;
 elixir((mix) => {
     mix.sass('app.sass','public/css/')
        .webpack('app.js')
-       .copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/fonts/bootstrap')
+    //    .copy('node_modules/bootstrap/dist/js/bootstrap.min.js','resources/assets/js/js')
        .browserSync({
-        proxy: '127.0.0.1:8000'
+        proxy: '127.0.0.1'
     });
 });

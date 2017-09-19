@@ -5,7 +5,7 @@
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.6",
     "gulp": "^3.9.1",
     "jquery": "^3.1.0",
     "jquery-parallax.js": "^1.4.3",
@@ -13,9 +13,11 @@
     "laravel-elixir-browsersync-official": "^1.0.0",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.16.2",
-    "parsleyjs": "^2.7.2"
+    "noty": "^3.1.2",
+    "parsleyjs": "^2.7.2",
+    "tether": "^1.4.0"
   },
   "dependencies": {
-    "noty": "^3.1.2"
+    
   }
 }
