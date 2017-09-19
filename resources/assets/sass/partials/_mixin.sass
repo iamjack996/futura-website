@@ -1,0 +1,42 @@
+@charset 'UTF-8'
+@import 'partials/variables'
+/*
+ |--------------------------------------------------------------------------
+ | mixin.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Mixin is sass provide super powerful feature , we need study it when we
+ | get free time , use it will reduce our coding time.
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+
+@mixin breakpoint($point)
+
+  @if $point == custom
+    @media only screen and (min-width: 320px)
+      @content
+
+  @else if $point == ex
+    @media only screen and (min-width: 480px)
+      @content
+
+  @else if $point == pad
+    @media only screen and (min-width: 768px)
+      @content
+
+  @else if $point == md
+    @media only screen and (min-width: 992px)
+      @content
+
+  @else if $point == pc
+    @media only screen and (min-width: 1200px)
+      @content
+
+
+
+@mixin typetitle($size:$font-size-header,$weight:$font-bold-weight,$spacing:2px,$shadow:$text-shadow-header)
+  font-weight: $weight
+  font-size: $size
+  letter-spacing: $spacing
+  text-shadow: $shadow

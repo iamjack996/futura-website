@@ -1,0 +1,6 @@
+@extends('layouts.errors')
+@section('og:title','400 你說什麼? -')
+@section('og:description','404 你說什麼? | FUTURA，專屬台灣大專院校的校園活動平台串起你我的美好校園生活！')
+@section('title','400 你說什麼? -')
+@section('err-num','400')
+@section('err','what are you talking about?')

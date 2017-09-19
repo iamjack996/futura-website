@@ -1,0 +1,118 @@
+@charset 'UTF-8'
+@import 'variables'
+@import 'mixin'
+/* remeber that text-rendering are important
+ * RWD animation */
+/*
+ |--------------------------------------------------------------------------
+ | base.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Here storage some our global style.
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+
+body
+    font-family: $font-family
+    font-size: $font-size-base
+    font-weight: $font-base-weight
+    color: $text-gray-color
+    padding-top: 50px // This is avoid navbar height
+    line-height: $line-height-base
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+/* selection when select some word , background will be FUTURA brand color */
+
+::selection
+    background: $section-color
+    color: white
+
+::-moz-selection
+    background: $section-color
+    color: white
+
+.no-navbar-padding
+    padding: 0
+    margin: 0
+
+
+.intern-kind
+    +typetitle(26px,$font-bold-weight,2px,0 0 10px white)
+    color: $text-black-color
+    margin-top: 60px
+    text-align: center
+
+.brand-div-line-center
+    background-image: $brands-color-gradient
+    margin: 28px auto
+    width: 30px
+    height: 2px
+
+.brand-div-line-left
+    background-image: $brands-color-gradient
+    margin: 28px 0px 28px 0px
+    width: 42px
+    height: 2px
+
+.intern-card-container
+    .intern-card
+        box-shadow: $card-shadow
+        margin: 30px auto
+        height: 220px
+        max-width: 780px
+        .card-left-left
+            display: inline-block
+            background-color: #1abc9c
+            color: white
+            padding: 0
+            margin: 0
+            text-align: center
+            height: inherit
+            min-width: 28%
+            h2
+                font-size: 28px
+                font-weight: 700
+                margin-top: 95px
+                letter-spacing: 5px
+        .card-left-right
+            position: relative
+            display: inline-block
+            background-color: #fff
+            float: right
+            width: 72%
+            height: inherit
+            border: 1px solid #ddd
+            border-left: 0
+            a
+                +transition(color 0.2s ease-in-out)
+                display: inline-block
+                color: $text-black-color
+                margin-left: 20px
+                text-decoration: none
+                margin-top: 10px
+                h3
+                    font-size: 24px
+                    width: 95%
+                    word-break: break-all
+                &:hover
+                    color: $brands-color-deep-green
+            p
+                margin-left: 20px
+                margin-top: 8px
+                width: 90%
+                word-break: break-all
+                color: $text-gray-color
+            .card-info
+                color: $text-light-gray-color
+                margin-top: 18px
+                margin-right: 30px
+                bottom: 10px
+                right: 0
+                position: absolute
+                font-size: 12px
+                span
+                    margin: 4px
+                i
+                    margin: 5px

@@ -1,0 +1,6 @@
+@extends('layouts.errors')
+@section('og:title','503 好忙好忙FUTURA好忙 -')
+@section('og:description','503 好忙好忙FUTURA好忙 | FUTURA，專屬台灣大專院校的校園活動平台串起你我的美好校園生活！')
+@section('title','503 好忙好忙Futura好忙 -')
+@section('err-num','503')
+@section('err','be right back')

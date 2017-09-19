@@ -1,0 +1,6 @@
+@extends('layouts.errors')
+@section('og:title','403 發你一張好人卡' -)
+@section('og:description','403 發你一張好人卡 | FUTURA，專屬台灣大專院校的校園活動平台串起你我的美好校園生活！')
+@section('title','403 發你一張好人卡' -)
+@section('err-num','403')
+@section('err','Dont be upset')

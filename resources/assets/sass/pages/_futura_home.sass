@@ -1,0 +1,40 @@
+@charset 'UTF-8'
+/*
+ |--------------------------------------------------------------------------
+ | futura_home.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+/* compass needs to install from RUBY and initialize */
+
+/* Variables include color,border,shadow,more and more*/
+@import 'partials/variables'
+
+.home-header
+	.header-title
+		position: absolute
+		color: white
+		margin: 120px auto 0px auto
+		width: 100%
+		z-index: 1
+		h1
+			+typetitle()
+		a
+			text-decoration: none
+			display: inline-block
+			margin-top: 60px
+			padding: 6px 14px
+			color: white
+			border: 1px solid white
+			border-radius: 20px
+			font-weight: $font-bold-weight
+			&:hover
+				background: $brands-color-tilt-gradient
+				border: 0
+	> .container-fluid
+		padding: 0
+	.header-image-size
+		background: transparent
+		min-height: 400px

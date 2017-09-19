@@ -1,0 +1,26 @@
+@charset 'UTF-8'
+/*
+ |--------------------------------------------------------------------------
+ | navbar.sass file
+ |--------------------------------------------------------------------------
+ |
+ | navbar style here , than import for app.sass to collect all file
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+
+/* compass needs to install from RUBY and initialize */
+
+/* Variables include color,border,shadow,more and more*/
+@import 'partials/variables'
+
+.navbar-brand
+	background-image: $brands-color-tilt-gradient
+.navbar-default
+	.navbar-brand
+		color: #fff
+		&:hover, &:focus
+			color: #fff
+.navbar-noborder
+	border: none
+

@@ -1,0 +1,41 @@
+@charset 'UTF-8'
+/*
+ |--------------------------------------------------------------------------
+ | App.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Import everything in here , collect all sass files in here
+ | provide a clean sass file , convence in maintain our css code
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+
+/* compass needs to install from RUBY and initialize */
+
+/* Bootstrap laravel build-in in node-js package manager*/
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap'
+@import '../../../node_modules/noty/src/noty.scss'
+@import 'plugins/parsley'
+
+
+/* Variables include color,border,shadow,more and more*/
+@import 'partials/variables'
+
+/* Two fonts put here */
+@import 'partials/fonts'
+
+/* FUTURA Base file provide Global css setting */
+@import 'partials/base'
+
+/* Final import mixix (powerful and cool) */
+@import 'partials/mixin'
+
+/* Import footer style */
+@import 'layouts/footer'
+@import 'layouts/navbar'
+
+/* Import pages in here */
+@import 'pages/login'
+@import 'pages/contact'
+@import 'pages/privacy'
+@import 'pages/futura_home'

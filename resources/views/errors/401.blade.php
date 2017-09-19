@@ -1,0 +1,6 @@
+@extends('layouts.errors')
+@section('og:title','401 欸欸欸！走錯了? -')
+@section('og:description','401 欸欸欸！走錯了? | FUTURA，專屬台灣大專院校的校園活動平台串起你我的美好校園生活！')
+@section('title','401 欸欸欸！走錯了? -')
+@section('err-num','401')
+@section('err','wrong way?')
