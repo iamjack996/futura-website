@@ -9841,7 +9841,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  */
 body {
   font-family: "Montserrat", "Noto Sans TC", PingFang TC, Microsoft JhengHei, 微軟正黑體, sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 400;
   color: #606060;
   padding-top: 50px;
@@ -9872,6 +9872,29 @@ body {
   margin: 0;
 }
 
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background-image: linear-gradient(135deg, #2fe3bf, #09d4f3);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
 .intern-kind {
   font-weight: 700;
   font-size: 26px;
@@ -9894,87 +9917,6 @@ body {
   margin: 28px 0px 28px 0px;
   width: 42px;
   height: 2px;
-}
-
-.intern-card-container .intern-card {
-  box-shadow: 0 0.3125rem 1rem 0 rgba(0, 0, 0, 0.24);
-  margin: 30px auto;
-  height: 220px;
-  max-width: 780px;
-}
-
-.intern-card-container .intern-card .card-left-left {
-  display: inline-block;
-  background-color: #1abc9c;
-  color: white;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  height: inherit;
-  min-width: 28%;
-}
-
-.intern-card-container .intern-card .card-left-left h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-top: 95px;
-  letter-spacing: 5px;
-}
-
-.intern-card-container .intern-card .card-left-right {
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  float: right;
-  width: 72%;
-  height: inherit;
-  border: 1px solid #ddd;
-  border-left: 0;
-}
-
-.intern-card-container .intern-card .card-left-right a {
-  transition: color 0.2s ease-in-out;
-  display: inline-block;
-  color: #222222;
-  margin-left: 20px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.intern-card-container .intern-card .card-left-right a h3 {
-  font-size: 24px;
-  width: 95%;
-  word-break: break-all;
-}
-
-.intern-card-container .intern-card .card-left-right a:hover {
-  color: #1acaaa;
-}
-
-.intern-card-container .intern-card .card-left-right p {
-  margin-left: 20px;
-  margin-top: 8px;
-  width: 90%;
-  word-break: break-all;
-  color: #606060;
-}
-
-.intern-card-container .intern-card .card-left-right .card-info {
-  color: #aaaaaa;
-  margin-top: 18px;
-  margin-right: 30px;
-  bottom: 10px;
-  right: 0;
-  position: absolute;
-  font-size: 12px;
-}
-
-.intern-card-container .intern-card .card-left-right .card-info span {
-  margin: 4px;
-}
-
-.intern-card-container .intern-card .card-left-right .card-info i {
-  margin: 5px;
 }
 
 /* Final import mixix (powerful and cool) */
@@ -10040,10 +9982,12 @@ footer a, footer span {
   font-size: 16px;
   color: #a8a8a8;
   margin: 40px 0;
+  transition: color 0.2s ease;
 }
 
 footer a:hover {
   color: white;
+  text-decoration: none;
 }
 
 /*
@@ -10071,20 +10015,42 @@ footer a:hover {
 /* Global Section color */
 /* Global Typography */
 /* Borders color */
-.navbar-brand {
-  background-image: linear-gradient(135deg, #2fe3bf, #09d4f3);
+.futura-navbar .futura-register {
+  background-color: #2fe3bf;
+  padding: 1px 10px;
+  transition: background-color 0.2s ease;
 }
 
-.navbar-default .navbar-brand {
+.futura-navbar .futura-register:hover {
+  background-color: #1acaaa;
+}
+
+.futura-navbar .futura-register:hover .nav-link {
   color: #fff;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.futura-navbar .futura-register .nav-link {
   color: #fff;
 }
 
-.navbar-noborder {
-  border: none;
+.futura-navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  transition: color 0.2s ease;
+  color: #606060;
+}
+
+.futura-navbar .navbar-brand:hover {
+  color: #222222;
+}
+
+.futura-navbar .nav-item {
+  margin-right: 12px;
+}
+
+.futura-navbar .nav-item a {
+  font-size: .9em;
 }
 
 /* Import pages in here */

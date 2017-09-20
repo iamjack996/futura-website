@@ -4,8 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-global.jQuery = require('jQuery');
+global.jQuery = require('jquery');
 var $ = jQuery;
+
 
 global.Tether = require('tether');
 require('bootstrap');
@@ -13,6 +14,17 @@ require('bootstrap');
 require('parsleyjs');
 require('jquery-parallax.js');
 require('noty');
+require('masonry-layout');
+
+
+
+
+
+
+
+
+
+
 
 
 $(document).ready(function() {
@@ -75,24 +87,24 @@ $(document).ready(function() {
             data: loginData,
             dataType: 'json',
             cache: false,
-            success: function(response){
+            success: function(response) {
                 window.location.replace(response.href);
             },
             error: function(xhr, status, response) {
-            var error = jQuery.parseJSON(xhr.responseText);
-              
+                var error = jQuery.parseJSON(xhr.responseText);
+
                 new Noty({
-                        type: 'error',
-                        layout: 'topCenter',
-                        theme: 'mint',
-                        text: error.message,
-                        timeout: 2000,
-                        closeWith: ['click', 'button'],
-                        animation: {
-                            open: 'noty_effects_open',
-                            close: 'noty_effects_close'
-                        },
-                    }).show();
+                    type: 'error',
+                    layout: 'topCenter',
+                    theme: 'mint',
+                    text: error.message,
+                    timeout: 2000,
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'noty_effects_open',
+                        close: 'noty_effects_close'
+                    },
+                }).show();
 
             }
         });
