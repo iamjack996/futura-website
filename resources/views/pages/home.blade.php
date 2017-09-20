@@ -23,93 +23,11 @@
 <div class="container home-hotintern">
     <h1 class="intern-kind">熱門實習</h1>
     <div class="brand-div-line-center"></div>
+    
 
-
-<div class="container intern-card-container">
-   <div class="intern-card">
-      <span class="card-left-left">
-         <h2>科技</h2>
-      </span>
-      <span class="card-left-right">
-         <a href="#">
-            <h3>我是測試文字我是測試文字我是測試文字我是測試文字</h3>
-         </a>
-         <p>12345645645646546454456445644564564564564564564645465456456445645645465465</p>
-         <div class="card-info">
-            <span>
-            <i class="fa fa-eye" aria-hidden="true">
-            </i>101
-            </span>
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i>2014-05-06</span>
-         </div>
-      </span>
-   </span>
 
 </div>
 
-
-   <div class="intern-card">
-      <span class="card-left-left">
-         <h2>科技</h2>
-      </span>
-      <span class="card-left-right">
-         <a href="#">
-            <h3>我是測試文字我是測試文字我是測試文字我是測試文字</h3>
-         </a>
-         <p>12345645645646546454456445644564564564564564564645465456456445645645465465</p>
-         <div class="card-info">
-            <span>
-            <i class="fa fa-eye" aria-hidden="true">
-            </i>101
-            </span>
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i>2014-05-06</span>
-         </div>
-      </span>
-   </span>
-
-</div>
-   <div class="intern-card">
-      <span class="card-left-left">
-         <h2>科技</h2>
-      </span>
-      <span class="card-left-right">
-         <a href="#">
-            <h3>我是測試文字我是測試文字我是測試文字我是測試文字</h3>
-         </a>
-         <p>12345645645646546454456445644564564564564564564645465456456445645645465465</p>
-         <div class="card-info">
-            <span>
-            <i class="fa fa-eye" aria-hidden="true">
-            </i>101
-            </span>
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i>2014-05-06</span>
-         </div>
-      </span>
-   </span>
-
-</div>
-   <div class="intern-card">
-      <span class="card-left-left">
-         <h2>科技</h2>
-      </span>
-      <span class="card-left-right">
-         <a href="#">
-            <h3>我是測試文字我是測試文字我是測試文字我是測試文字</h3>
-         </a>
-         <p>12345645645646546454456445644564564564564564564645465456456445645645465465</p>
-         <div class="card-info">
-            <span>
-            <i class="fa fa-eye" aria-hidden="true">
-            </i>101
-            </span>
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i>2014-05-06</span>
-         </div>
-      </span>
-   </span>
-
-</div>
-</div>
-</div>
 
 @include('layouts/footer')
 
