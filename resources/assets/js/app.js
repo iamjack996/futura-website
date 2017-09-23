@@ -7,17 +7,14 @@
 global.jQuery = require('jquery');
 var $ = jQuery;
 
-
-global.Tether = require('tether');
+global.Popper = require('popper.js');
+// global.Tether = require('tether');
 require('bootstrap');
 
 require('parsleyjs');
 require('jquery-parallax.js');
 require('noty');
 require('masonry-layout');
-
-
-
 
 
 

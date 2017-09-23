@@ -24,6 +24,14 @@
     <h1 class="intern-kind">熱門實習</h1>
     <div class="brand-div-line-center"></div>
     
+    <div class="container">
+        <div class="row cards-container">
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4 fr-card">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
