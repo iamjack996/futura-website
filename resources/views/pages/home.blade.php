@@ -26,9 +26,21 @@
     
     <div class="container">
         <div class="row cards-container">
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4 fr-card">
-                    
+            <div class="col-sm-6 col-md-4 fr-card">
+              <a href="#" class="card-info">
+
+                        <div class="card-title">
+                            <div style="flex: 3;">
+                              asdasd
+                            </div>
+                            <div style="flex: 1;">
+                              asdas
+                            </div>
+                         </div>
+                     </a>
                 </div>
+           
+        
             </div>
         </div>
     </div>

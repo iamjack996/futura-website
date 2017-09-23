@@ -16,7 +16,7 @@
 	.header-title
 		position: absolute
 		color: white
-		margin: 180px auto 0px auto
+		margin: calc(20vh) auto 0px auto
 		width: 100%
 		z-index: 1
 		h1
@@ -39,3 +39,24 @@
 	.header-image-size
 		background: transparent
 		min-height: calc(50px + 48vh)
+.cards-container
+	margin: 0
+	.fr-card
+		height: 290px
+		margin: 12px 0
+		padding: 0 6px
+		.card-info
+			text-decoration: none
+			display: block
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05)
+			border-radius: 4px
+			height: inherit
+			background: #fff
+			transition: box-shadow .1s ease-in
+			&:hover
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1)
+			.card-title
+				height: 100px
+				background: #00aaff
+				border-radius: 4px 4px 0 0
+				display: flex

@@ -8,7 +8,6 @@ global.jQuery = require('jquery');
 var $ = jQuery;
 
 global.Popper = require('popper.js');
-// global.Tether = require('tether');
 require('bootstrap');
 
 require('parsleyjs');
@@ -134,3 +133,4 @@ $(document).ready(function() {
 
 
 });
+

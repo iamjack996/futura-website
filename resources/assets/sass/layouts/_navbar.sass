@@ -13,12 +13,14 @@
 
 /* Variables include color,border,shadow,more and more*/
 @import 'partials/variables'
-
+@import 'partials/mixin'
 .futura-navbar
 	height: 60px
 	background: #fff
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05)
-
+	.futura-logo
+		  margin-top: 6px
+		  transform: scale(0.7)
 	.futura-register
 		background-color: $brands-color-green
 		padding: 1px 10px
@@ -32,12 +34,15 @@
 	.nav-item
 		margin-right: 12px
 		a
+			transition: color 0.2s ease
 			font-size: .8em
-
-@media only screen and (min-width: 768px)
-	.navbar-collapse 
++phone-width()
+	.navbar-toggler
+		transform: scale(0.8)
+	.navbar-collapse
 		background: #fff
 		> ul
 			text-align: center
 		.nav-item
 			width: 100%
+

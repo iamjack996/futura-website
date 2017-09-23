@@ -9249,7 +9249,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 /* selection when select some word , background will be FUTURA brand color */
@@ -9270,12 +9270,6 @@ body {
 .no-navbar-padding {
   padding: 0;
   margin: 0;
-}
-
-.futura-logo {
-  margin-top: 6px;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
 }
 
 .pace {
@@ -9421,10 +9415,40 @@ footer a:hover {
 /* Global Section color */
 /* Global Typography */
 /* Borders color */
+/*
+ |--------------------------------------------------------------------------
+ | variables.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Here storage some our variable and call it when you need it
+ | stay here to be clear and high readable , high repeat variable need to save it to here.
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+/* FUTURA Brands colors */
+/* Global Section color */
+/* Global Typography */
+/* Borders color */
+/*
+ |--------------------------------------------------------------------------
+ | mixin.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Mixin is sass provide super powerful feature , we need study it when we
+ | get free time , use it will reduce our coding time.
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
 .futura-navbar {
   height: 60px;
   background: #fff;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.futura-navbar .futura-logo {
+  margin-top: 6px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .futura-navbar .futura-register {
@@ -9450,10 +9474,15 @@ footer a:hover {
 }
 
 .futura-navbar .nav-item a {
+  transition: color 0.2s ease;
   font-size: .8em;
 }
 
-@media only screen and (min-width: 768px) {
+@media all and (max-width: 479px) {
+  .navbar-toggler {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
   .navbar-collapse {
     background: #fff;
   }
@@ -9760,14 +9789,14 @@ footer a:hover {
 .home-header .header-title {
   position: absolute;
   color: white;
-  margin: 180px auto 0px auto;
+  margin: calc(20vh) auto 0px auto;
   width: 100%;
   z-index: 1;
 }
 
 .home-header .header-title h1 {
   font-weight: 700;
-  font-size: calc(2.4em + 1vw);
+  font-size: calc(2em + 1vw);
   letter-spacing: 2px;
   text-shadow: 0 0 12px #222222;
 }
@@ -9796,4 +9825,37 @@ footer a:hover {
 .home-header .header-image-size {
   background: transparent;
   min-height: calc(50px + 48vh);
+}
+
+.cards-container {
+  margin: 0;
+}
+
+.cards-container .fr-card {
+  height: 290px;
+  margin: 12px 0;
+  padding: 0 6px;
+}
+
+.cards-container .fr-card .card-info {
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  height: inherit;
+  background: #fff;
+  transition: box-shadow .1s ease-in;
+}
+
+.cards-container .fr-card .card-info:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cards-container .fr-card .card-info .card-title {
+  height: 100px;
+  background: #00aaff;
+  border-radius: 4px 4px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
