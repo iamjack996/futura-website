@@ -8,7 +8,7 @@
 </style>
 @stop
 @section('content')
-{{-- <div class="login-background">
+<div class="login-background">
    <div class="container">
       <div class="row">
          <div class="futura-signin col-xs-6">
@@ -59,10 +59,10 @@
          </div>
       </div>
    </div>
-</div> --}}
+</div>
 
 
-    <div class="container">
+    {{-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 futura-signin">
                 <div class="card-group mb-0">
@@ -73,7 +73,7 @@
                             <div class="input-group mb-3">
                                 <span class="input-group-addon"><i class="icon-user"></i>
                                 </span>
-                                <input type="e-mail" class="form-control" placeholder="信箱">
+                                <input type="email" class="form-control" placeholder="信箱">
                             </div>
                             <div class="input-group mb-4">
                                 <span class="input-group-addon"><i class="icon-lock"></i>
@@ -82,10 +82,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <button type="button" class="btn btn-primary px-4 fr-login-btn">登入</button>
+                                    <button type="button" class="btn btn-primary px-4 fr-login-btn" id="loginSend">登入</button>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <button type="button" class="btn btn-link px-0 fr-forget-btn">忘記密碼?</button>
+                                    <a href="{{ url('password/reset') }}"><button type="button" class="btn btn-link px-0 fr-forget-btn">忘記密碼?</button></a>
                                 </div>
                             </div>
                         </div>
@@ -97,14 +97,14 @@
                                 <h2>註冊</h2>
 
                                 <p>趕快加入 FUTURA 未來實習資訊看版，你可以更快的找到想要的實習。把握你美好的未來。</p>
-                                <a href=""><button type="button" class="btn fr-sign-btn active mt-3">立即註冊</button></a>
+                                <a href="{{ Route('register') }}"><button type="button" class="btn fr-sign-btn active mt-3">立即註冊</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @stop
 @section('footer')
 <script src="js/noty.min.js"></script>
