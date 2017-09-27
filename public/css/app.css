@@ -8710,6 +8710,18 @@ a.text-dark:focus, a.text-dark:hover {
   color: #fff;
 }
 
+input.parsley-success, select.parsley-success, textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error, select.parsley-error, textarea.parsley-error {
+  color: #ea526f;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
 .parsley-errors-list {
   margin: 2px 0 3px;
   padding: 0;
@@ -8717,6 +8729,7 @@ a.text-dark:focus, a.text-dark:hover {
   font-size: 0.9em;
   line-height: 0.9em;
   opacity: 0;
+  display: none;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
@@ -8725,13 +8738,6 @@ a.text-dark:focus, a.text-dark:hover {
 
 .parsley-errors-list.filled {
   opacity: 1;
-}
-
-.parsley-errors-list li {
-  color: #ea526f;
-  transition: .2s all ease-out;
-  margin-top: 12px;
-  padding-left: 6px;
 }
 
 /* Variables include color,border,shadow,more and more*/
@@ -8859,6 +8865,10 @@ body {
 .no-navbar-padding {
   padding: 0;
   margin: 0;
+}
+
+.g-recaptcha {
+  margin: 14px 12px;
 }
 
 .pace {
@@ -9406,4 +9416,60 @@ footer a:hover {
   margin: 8px 4px;
   font-size: .8rem;
   display: inline-block;
+}
+
+/*
+ |--------------------------------------------------------------------------
+ | privacy.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+/* compass needs to install from RUBY and initialize */
+/* Variables include color,border,shadow,more and more*/
+/*
+ |--------------------------------------------------------------------------
+ | variables.sass file
+ |--------------------------------------------------------------------------
+ |
+ | Here storage some our variable and call it when you need it
+ | stay here to be clear and high readable , high repeat variable need to save it to here.
+ | Copyright © 2017 FUTURA (Steven Ho). All rights reserved.
+ |
+ */
+/* FUTURA Brands colors */
+/* Global Section color */
+/* Global Typography */
+/* Borders color */
+.futura-signup {
+  color: #050b12;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(25vw);
+}
+
+@media all and (min-width: 760px) and (max-width: 959px) {
+  .futura-signup {
+    width: calc(50vw);
+  }
+}
+
+@media all and (max-width: 479px) {
+  .futura-signup {
+    width: calc(75vw);
+  }
+}
+
+.futura-signup .fr-signup-btn {
+  color: #fff;
+  background-color: #2fe3bf;
+  transition: background-color .2s ease-in-out;
+}
+
+.futura-signup .fr-signup-btn:hover {
+  background-color: #1acaaa;
 }

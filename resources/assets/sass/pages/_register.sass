@@ -12,38 +12,21 @@
 /* Variables include color,border,shadow,more and more*/
 @import 'partials/variables'
 
-.futura-signin
+.futura-signup
 	color: $text-deep-black-color
 	position: absolute
 	left: 50%
 	top: 50%
 	transform: translate(-50%, -50%)
-	width: calc(40vw)
+	width: calc(25vw)
 	+pad-width()
-		width: calc(80vw)
+		width: calc(50vw)
 	+phone-width()
-		width: calc(100vw)
-	.fr-login-btn
+		width: calc(75vw)
+	.fr-signup-btn
+		color: #fff
 		background-color: $brands-color-green
-		border: none
+		transition: background-color .2s ease-in-out
 		&:hover
 			background-color: $brands-color-deep-green
-	.fr-forget-btn
-		color: $text-black-color
-.fr-sign-bg
-	background-image: $brands-color-tilt-gradient
-	img
-		width: 48px
-		height: 48px
-		margin-bottom: 24px
-	h2
-		margin-bottom: 24px
-	.fr-sign-btn
-		background: transparent
-		border: 1px solid #fff
-		color: #fff
-		transition: color background .2s ease-in-out
-		&:hover
-			background: #fff
-			color: $brands-color-green
 

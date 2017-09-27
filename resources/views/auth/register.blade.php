@@ -1,6 +1,11 @@
 @extends('layouts.main')
-
+@section('title','註冊')
 @section('head')
+<style>
+  body{
+    background-color: #fefefe;
+  }
+</style>
 @stop
 
 @section('content')
@@ -85,7 +90,7 @@
         {!! Form::close() !!} --}}
  <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-6 futura-signup">
                 <div class="card mx-4">
                     <div class="card-body p-4">
                         <h1>註冊</h1>
@@ -112,10 +117,14 @@
                             </span>
                             <input type="password" class="form-control" placeholder="確認密碼">
                         </div>
-
-                        <button type="button" class="btn btn-block btn-success">Create Account</button>
+                            <div class="container">
+                            <div class="g-recaptcha" data-sitekey="{{ env('RE_CAP_SITE') }}">
+                            </div>
+                            </div>
+                             
+                        <button type="button" class="btn btn-block fr-signup-btn">註冊</button>
                     </div>
-                    <div class="card-footer p-4">
+{{--                     <div class="card-footer p-4">
                         <div class="row">
                             <div class="col-6">
                                 <button class="btn btn-block btn-facebook" type="button">
@@ -127,7 +136,7 @@
                                     <span>twitter</span>
                                 </button>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

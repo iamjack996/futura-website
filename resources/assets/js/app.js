@@ -13,14 +13,6 @@ require('bootstrap');
 require('parsleyjs');
 require('jquery-parallax.js');
 require('noty');
-require('masonry-layout');
-
-
-
-
-
-
-
 
 
 $(document).ready(function() {
@@ -76,11 +68,14 @@ $(document).ready(function() {
 
     $('#loginSend').click(function(e) {
         e.preventDefault();
-        var loginData = $('#loginForm').serialize();
+        
         $.ajax({
             type: 'POST',
             url: '/login',
-            data: loginData,
+                headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    },
+            data: {email: $('#signEmail').val(), password: $('#signPassword').val(), remember: $('#remember-me').val()},
             dataType: 'json',
             cache: false,
             success: function(response) {
@@ -94,11 +89,10 @@ $(document).ready(function() {
                     layout: 'topCenter',
                     theme: 'mint',
                     text: error.message,
-                    timeout: 2000,
-                    closeWith: ['click', 'button'],
+                    timeout: 1000,
                     animation: {
-                        open: 'noty_effects_open',
-                        close: 'noty_effects_close'
+                        open : 'animated fadeInUp',
+                        close: 'animated fadeOutUp'
                     },
                 }).show();
 

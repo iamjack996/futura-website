@@ -8,7 +8,7 @@
 </style>
 @stop
 @section('content')
-<div class="login-background">
+{{-- <div class="login-background">
    <div class="container">
       <div class="row">
          <div class="futura-signin col-xs-6">
@@ -59,10 +59,10 @@
          </div>
       </div>
    </div>
-</div>
+</div> --}}
 
 
-    {{-- <div class="container">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 futura-signin">
                 <div class="card-group mb-0">
@@ -70,26 +70,32 @@
                         <div class="card-body">
                             <h1>登入</h1>
                             <p class="text-muted">登入你的帳戶</p>
+                            <form method="POST" id="loginForm" data-parsley-validate="data-parsley-validate">
                             <div class="input-group mb-3">
-                                <span class="input-group-addon"><i class="icon-user"></i>
+                                <span class="input-group-addon">@
                                 </span>
-                                <input type="email" class="form-control" placeholder="信箱">
+                                <input class="form-control parsley-error" id="signEmail" data-parsley-required-message="請輸入 E-mail" data-parsley-type-message="請輸入正確的 E-mail" data-parsley-trigger="change focusout" data-parsley-type="email" name="email" data-parsley-id="5" type="email" placeholder="信箱">
                             </div>
                             <div class="input-group mb-4">
                                 <span class="input-group-addon"><i class="icon-lock"></i>
                                 </span>
-                                <input type="password" class="form-control" placeholder="密碼">
+                                <input type="password" class="form-control parsley-error" required="required" id="signPassword" data-parsley-required-message="請輸入密碼" data-parsley-minlength-message="密碼少於 6 個位元" data-parsley-maxlength-message="密碼大於 20 個位元" data-parsley-trigger="change focusout" data-parsley-minlength="6" data-parsley-maxlength="20" name="password" data-parsley-id="7" placeholder="密碼">
                             </div>
                             <div class="row">
                                 <div class="col-6">
+
+                                  <span class="fr-remember"><input id="remember-me" data-parsley-multiple="remember" value="1" type="checkbox" name="remember"> 記住我</span>
+                                    <hr> 
                                     <button type="button" class="btn btn-primary px-4 fr-login-btn" id="loginSend">登入</button>
                                 </div>
                                 <div class="col-6 text-right">
+
                                     <a href="{{ url('password/reset') }}"><button type="button" class="btn btn-link px-0 fr-forget-btn">忘記密碼?</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </form>
                     <div class="card text-white fr-sign-bg py-5 d-none d-lg-block" style="width:44%">
                         <div class="card-body text-center">
                             <div>
@@ -104,7 +110,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 @stop
 @section('footer')
 <script src="js/noty.min.js"></script>
