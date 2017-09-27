@@ -15,6 +15,6 @@ elixir((mix) => {
     mix.sass('app.sass','public/css/')
        .webpack('app.js')
        .browserSync({
-        proxy: '127.0.0.1'
+        proxy: 'futura.dev'
     });
 });

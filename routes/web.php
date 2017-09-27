@@ -13,6 +13,7 @@
 
 $s = 'public.';
 Route::get('/',         ['as' => $s . 'home',   'uses' => 'PagesController@getHome']);
+Route::get('/intern',         ['as' => $s . 'intern',   'uses' => 'PagesController@getIntern']);
 Route::get('/contact',  ['as' => $s . 'contact',   'uses' => 'PagesController@getContact']);
 Route::post('/sendcontact',  ['as' => $s . 'sendcontact',   'uses' => 'PagesController@sendContact']);
 

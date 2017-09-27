@@ -11,7 +11,7 @@
     <div class="container-fluid text-center">
    <div class="header-title">
          <h1>用最美好實習，累積堅強實力。</h1>
-         <a href="#">查看所有實習</a>
+         <a href="{{ Route('public.intern') }}">查看所有實習</a>
    </div>
 
     </div>
@@ -20,26 +20,45 @@
 </header>
 
 
-<div class="container home-hotintern">
+<div class="container">
     <h1 class="intern-kind">熱門實習</h1>
     <div class="brand-div-line-center"></div>
     
     <div class="container">
         <div class="row cards-container">
             <div class="col-sm-6 col-md-4 fr-card">
-              <a href="#" class="card-info">
+              <div class="card-info">
 
                         <div class="card-title">
-                            <div style="flex: 3;">
-                              asdasd
+                            <div class="title-left">
+                                <a href=""><h2>我是標題</h2></a>
+                                 <h3>前端實習生</h3>
                             </div>
-                            <div style="flex: 1;">
-                              asdas
+
+                            <div class="title-right">
+                                <a href=""><h3>科技</h3></a>
                             </div>
                          </div>
-                     </a>
+                         <div class="card-content">
+                             <div class="container">
+                                <div class="card-detail">
+                                    <p>I'm 簡介</p>
+                                </div>
+                                 
+                      <div class="card-bottom">
+                        <a href="" style="color: #00aaff;"><p>電獺股份有限公司</p></a>
+                            <p>14 views</p>
+                            <p>2017/9/27</p>
+
+                         </div>
+                             </div>
+
+
+                         </div>
+
+                     </div>
                 </div>
-           
+            
         
             </div>
         </div>
