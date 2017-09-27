@@ -9108,163 +9108,65 @@ footer a:hover {
 /* Global Section color */
 /* Global Typography */
 /* Borders color */
-.login-background {
-  height: 100vh;
-  background: linear-gradient(135deg, #2fe3bf, #09d4f3, #2fe3bf, #09d4f3);
-  background-size: 1000% 100%;
-  -webkit-animation: gradient-animation 100s ease infinite;
-  animation: gradient-animation 100s ease infinite;
-}
-
 .futura-signin {
+  color: #050b12;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 350px;
+  width: calc(40vw);
 }
 
-.futura-signin > .panel {
-  box-shadow: 0 1px 5px #c7dfe8;
-  border-radius: 10px;
+@media all and (min-width: 760px) and (max-width: 959px) {
+  .futura-signin {
+    width: calc(80vw);
+  }
+}
+
+@media all and (max-width: 479px) {
+  .futura-signin {
+    width: calc(100vw);
+  }
+}
+
+.futura-signin .fr-login-btn {
+  background-color: #2fe3bf;
   border: none;
 }
 
-.futura-signin > .panel > .panel-heading {
-  border-radius: 10px;
+.futura-signin .fr-login-btn:hover {
+  background-color: #1acaaa;
+}
+
+.futura-signin .fr-forget-btn {
+  color: #222222;
+}
+
+.fr-sign-bg {
+  background-image: linear-gradient(135deg, #2fe3bf, #09d4f3);
+}
+
+.fr-sign-bg img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.fr-sign-bg h2 {
+  margin-bottom: 24px;
+}
+
+.fr-sign-bg .fr-sign-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: color background .2s ease-in-out;
+}
+
+.fr-sign-bg .fr-sign-btn:hover {
   background: #fff;
-  text-align: center;
-  border-bottom: none;
-}
-
-.futura-signin > .panel > .panel-heading > img {
-  margin: 10px 0;
-  width: 80px;
-  height: 80px;
-}
-
-#loginForm input {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 1px solid #c7dfe7;
-  padding: 8px;
-}
-
-#loginForm input::-webkit-input-placeholder {
-  color: #c7dfe7;
-  font-weight: 400;
-}
-
-#loginForm input:-ms-input-placeholder {
-  color: #c7dfe7;
-  font-weight: 400;
-}
-
-#loginForm input::placeholder {
-  color: #c7dfe7;
-  font-weight: 400;
-}
-
-#loginForm input:focus {
-  border: none;
-  border-bottom: 1px solid #09d4f3;
-  box-shadow: none;
-}
-
-#loginForm input:focus::-webkit-input-placeholder {
-  color: #09d4f3;
-  transition: all .5s ease;
-}
-
-#loginForm input:focus:-ms-input-placeholder {
-  color: #09d4f3;
-  transition: all .5s ease;
-}
-
-#loginForm input:focus::placeholder {
-  color: #09d4f3;
-  transition: all .5s ease;
-}
-
-#loginForm > #signPassword {
-  margin-top: 20px;
-}
-
-#loginForm button {
-  border: none;
-  border-radius: 0;
-  background: linear-gradient(135deg, #2fe3bf, #09d4f3);
-  color: #fff;
-}
-
-#loginForm button:hover, #loginForm button:active, #loginForm button:visited, #loginForm button:focus {
-  color: #fff;
-  background: linear-gradient(135deg, #2fe3bf, #09d4f3);
-  box-shadow: none;
-  border: none;
-}
-
-#loginForm label[for=remember-me] {
-  font-weight: 400;
-}
-
-#loginForm .social-title {
-  margin-top: 8px;
-  font-size: 12px;
-}
-
-#loginForm .forget-password, #loginForm #remember-me {
-  margin-top: 22px;
-  font-size: 14px;
-}
-
-#loginForm .facebook-login {
-  background-color: #3b5998;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  height: 40px;
-  line-height: 20px;
-  border-radius: 0;
-  margin: 10px 0;
-}
-
-@-webkit-keyframes gradient-animation {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 25% 75%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  75% {
-    background-position: 75% 25%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 25% 75%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  75% {
-    background-position: 75% 25%;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  color: #2fe3bf;
 }
 
 /*
