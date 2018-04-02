@@ -19,3 +19,5 @@ use Illuminate\Http\Request;
 
 $s = 'public.';
 Route::get('/test',  ['as' => $s . 'test',   'uses' => 'testController@gettest'])->middleware('basicauthapi');
+
+//
